@@ -15,12 +15,12 @@ stages{
    steps{
   slackSend(channel: '#jenkins-deployments', color: '#009933', message: 'job1 build sucessful', teamDomain: 'jenkins-slack',
   tokenCredentialId: 'Slack-password')
+        }
+      }
+    }
   }
-  }
-  }
-  }
+
   def getTerraformPath(){
   tfHome = tool name: 'terraform 0.15', type: 'terraform'
   return tfHome
   }
-© 2021 GitHub, Inc.
