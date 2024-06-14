@@ -4,9 +4,13 @@ pool:
 
 stages:
   - stage: Git
-    displayName: "Pull for github"
+    displayName: "Pull"
     jobs:
       - job: A
+  - stage: Push
+    displayName: "Push"
+    jobs:
+      - job: B
         
-
+  
   
