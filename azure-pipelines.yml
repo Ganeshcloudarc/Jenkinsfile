@@ -1,6 +1,6 @@
 
 pool: 
-  vmImage: 'windows-latest'
+  name: default
 
 stages:
   - stage: Git
